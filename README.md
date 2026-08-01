@@ -1,12 +1,13 @@
 # DSR-Gen
-Registration‑Free Contrast-Enhancement Generation Framework Based on Deformation Mask and Self‑Supervised Depth Prior
-Official PyTorch implementation of DSR-Gen: A registration‑free framework for synthesizing contrast‑enhanced CT (CECT) from non‑contrast CT (NCCT) without requiring paired or registered training data.
+Registration‑Free Contrast-Enhancement Generation Framework Based on Deformation Mask and Self‑Supervised Depth Prior.
+# Official PyTorch implementation of DSR-Gen 
+A registration‑free framework for synthesizing contrast‑enhanced CT from non‑contrast CT  without requiring paired or registered training data.
 
 # Overview
 DSR-Gen addresses the fundamental challenge of anatomical misalignment between NCCT and CECT acquisitions—caused by respiratory motion, cardiac pulsation, and intestinal peristalsis—which renders perfectly paired training data unattainable in clinical practice.
-Our framework introduces three key innovations:
+# Our framework introduces three key innovations:
 1.Deformation Mask: A threshold‑based mask (100–400 HU) that selectively supervises only anatomically consistent regions, effectively circumventing the misalignment problem without requiring explicit registration.
-2.Explicit Enhancement Component Learning: An Enhancement Component Learning and Embedding Module (ECLEM) that decouples contrast pattern modeling from structural preservation by explicitly learning the enhancement component。
+2.Explicit Enhancement Component Learning: An Enhancement Component Learning and Embedding Module (ECLEM) that decouples contrast pattern modeling from structural preservation by explicitly learning the enhancement component.
 3.Self‑Supervised Depth Prior: A Self‑Reconstruction Module (SRM) that shares network weights with the Enhancement Generation Module (EGM), anchoring the synthesis process to the input anatomy and preserving structural fidelityeven in misaligned regions.
 <img width="9179" height="4218" alt="figure1" src="https://github.com/user-attachments/assets/a6e68008-6f3b-4ab1-96a8-3fd9f9852f93" />
 
